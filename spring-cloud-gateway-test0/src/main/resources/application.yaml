@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: from_yaml1
+          uri: http://localhost:8888
+          predicates:
+            - Path=/test2
+          filters:
+            - RedirectTo=302, http://localhost:8888/test2_redirected
+my:
+  server:
+    url: http://localhost:8888
+server:
+  port: 8081

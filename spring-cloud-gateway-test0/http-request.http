@@ -1,0 +1,33 @@
+###from_yaml1
+GET http://localhost:8081/test2
+
+###one: just path predicate 1
+GET http://localhost:8081/
+
+###one: just path predicate 2
+GET http://localhost:8081/test1
+
+###two: test 'redirect' filter
+GET http://localhost:8081/test3
+
+###three: setPath filter 1
+GET http://localhost:8081/test5/aaa
+
+###three: setPath filter 1
+GET http://localhost:8081/test6/bbb
+
+###four: pathPrefix filter
+GET http://localhost:8081/test4
+
+###five: test path+method+query predicate
+GET http://localhost:8081/test7?param1=foo
+
+
+
+
+
+
+
+
+
+
